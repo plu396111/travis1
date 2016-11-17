@@ -1,7 +1,7 @@
 import unittest
 
 def function1(var1):
-    return var1 + 1
+    return var1 + 2
 
 def function2(var2):
     return var2 * 2
