@@ -1,4 +1,4 @@
-import pytest
+import unittest
 
 def function1(var1):
     return var1 + 1
@@ -13,7 +13,7 @@ def functionFalse():
     return False
 
 #subclass
-class MyTest(pytest.TestCase):
+class MyTest(unittest.TestCase):
     def test(self):
         self.assertEqual(function1(3), 4)
 
@@ -30,4 +30,4 @@ class MyTest(pytest.TestCase):
         self.assertRaises(functionTrue())
 
 if __name__ == '__main__':
-    pytest.main()
+    unittest.main()
